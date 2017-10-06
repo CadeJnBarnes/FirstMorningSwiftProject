@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController
 {
     @IBOutlet weak var firstButton: UIButton!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -19,6 +20,14 @@ class ViewController: UIViewController
 
     @IBAction func firstmethod(_ sender: UIButton)
     {
+       if(firstButton.backgroundColor == .orange)
+       {
+            firstButton.backgroundColor = .black
+        }
+        else
+       {
+        firstButton.backgroundColor = .orange
+        }
         
     }
     override func didReceiveMemoryWarning()
